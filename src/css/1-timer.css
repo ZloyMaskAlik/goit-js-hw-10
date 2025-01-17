@@ -1,0 +1,123 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+  }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title-page{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  max-width: 396px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.back-link {
+ font-size: 28px;
+ font-weight: 700;
+ margin: 8px 8px 24px 8px;
+ padding: 16px 115px;
+ border-radius: 8px;
+ background-color:#4E75FF;
+ color: #ffffff;
+ box-shadow: 5px 10px 9px 8px #d8d7d7;
+ transition: background-color 250ms ease-in-out;
+ transition: transform 250ms ease-in-out;
+}
+
+.back-link:hover,
+.back-link:active,
+button:hover,
+button:focus {
+  outline: none;
+  background-color: #6c8cff;
+  transform: scale(0.98);
+}
+
+#datetime-picker {
+  height: 40px;
+  min-width: 272px;
+  text-align: left;
+  padding-left: 16px;
+  font-size: large;
+  font-weight: 400;
+  color: #2e2f42;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  background-color: #fff;
+  box-shadow: 5px 10px 9px 8px #d8d7d7;
+}
+#datetime-picker:disabled{
+  background-color: #fafafa;
+  color: #8a8a8a;
+  }
+
+button {
+  border-radius: 8px;
+  margin: 0 8px;
+  width: 75px;
+  height: 40px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 500;
+  border: none;
+  background-color: #4E75FF;
+  box-shadow: 5px 10px 9px 8px #d8d7d7;
+  color: #ffffff;
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  color: #808080;
+}
+
+#datetime-picker:active {
+  outline: none;
+  border: 1px solid #4E75FF;;
+  background-color: #fff;
+  color: #2e2f42;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 32px 0px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  text-align: center;
+  min-width: 55px;
+  min-height: 72px;
+  text-shadow: 10px 9px 8px #808080;
+}
+
+.value {
+  text-shadow: 10px 9px 8px #d8d7d7;
+  font-size: 40px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 16px;
+}

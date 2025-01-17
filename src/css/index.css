@@ -1,0 +1,53 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+   max-width: 1440px;
+   margin: 50px auto;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    max-width: 380px;
+    padding: 16px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.task-link {
+    display: flex;
+    justify-content: center
+}
+
+li {
+    min-width: 380px;
+    margin: 24px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 9px 8px #d8d7d7;
+    background-color: #4E75FF;
+    transition: background-color 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+}
+
+li:hover,
+li:active {
+    background-color: #6c8cff;
+    transform: scale(0.98);
+}
+
+.nav-logo-icon {
+background-color: transparent;
+}

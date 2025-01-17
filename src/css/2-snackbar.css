@@ -1,0 +1,127 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    color: #2e2f42;
+    font-weight: 400;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    max-width: 380px;
+    margin: 24px auto;
+    padding: 16px 42px;
+    border-radius: 8px;
+    box-shadow: 5px 10px 9px 8px #d8d7d7;
+    border: 1px solid #4E75FF;
+    background-color: #4E75FF;
+    transition: background-color 250ms ease-in-out;
+}
+
+.title-page {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    max-width: 396px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.back-link {
+    margin: 8px 8px 24px 8px;
+    padding: 16px 115px;
+}
+
+.form {
+    max-width: 360px;
+    margin: 24px auto;
+}
+
+label{
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: 8px auto 8px auto;
+}
+
+input {
+    margin-top: 8px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    color: #2e2f42;
+    padding: 8px 16px;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+input:active  {
+    outline: none;
+    border: 1px solid #4E75FF;
+}
+
+button {
+    cursor: pointer;
+    min-width: 360px;
+    margin-top: 24px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #ffffff;
+    border: 1px solid #4E75FF;
+    background-color: #4E75FF;
+    transition: background-color 250ms ease-in-out;
+    transition: border 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+}
+
+button:hover,
+button:active,
+a:hover,
+a:active {
+    background-color: #6c8cff;
+    border: 1px solid #6c8cff;
+    transform: scale(0.98);
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    width: 360px;
+    height: 64px;
+    padding: 0px;
+    margin: 0px;
+    gap: 48px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+}
+
+.radio-label {
+    min-width: 104px;
+    max-height: 32px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 8px 0px;
+}
+
+.radio-input {
+    width: 20px;
+    height: 20px;
+    margin: 0px 14px 0px 0px;
+    box-shadow: none;
+}
