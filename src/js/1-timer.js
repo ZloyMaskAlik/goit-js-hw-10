@@ -53,20 +53,21 @@ const timer = {
   start() {
     this.intervalId = setInterval(() => {
       const ms = userSelectedDate - Date.now();
+      if (ms>=0) {
       const timeComponents = this.convertMs(ms);
   
       this.elements.days.textContent = this.pad(timeComponents.days);
       this.elements.hours.textContent = this.pad(timeComponents.hours);
       this.elements.minutes.textContent = this.pad(timeComponents.minutes);
-      this.elements.seconds.textContent = this.pad(timeComponents.seconds);
+      this.elements.seconds.textContent = this.pad(timeComponents.seconds)
+      } else {
+        return;
+      };
 
     }, 1000);
 
   },
-  
-  stop() {
-    clearInterval(this.intervalId);
-  },
+
 
   convertMs(ms) {
     // Number of milliseconds per unit of time
