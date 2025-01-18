@@ -53,22 +53,19 @@ const timer = {
   start() {
     this.intervalId = setInterval(() => {
       const ms = userSelectedDate - Date.now();
-      if (ms>=0) {
-      const timeComponents = this.convertMs(ms);
-  
-      this.elements.days.textContent = this.pad(timeComponents.days);
-      this.elements.hours.textContent = this.pad(timeComponents.hours);
-      this.elements.minutes.textContent = this.pad(timeComponents.minutes);
-      this.elements.seconds.textContent = this.pad(timeComponents.seconds)
+      if (ms >= 0) {
+        const timeComponents = this.convertMs(ms);
+        this.elements.days.textContent = this.pad(timeComponents.days);
+        this.elements.hours.textContent = this.pad(timeComponents.hours);
+        this.elements.minutes.textContent = this.pad(timeComponents.minutes);
+        this.elements.seconds.textContent = this.pad(timeComponents.seconds)
       } else {
-          startButton.disabled = false;
-          datetimePicker.disabled = false;
+        clearInterval(this.intervalId);  
+        datetimePicker.disabled = false;
+        return;
       };
-      return;
-
     }, 1000);
-
-  },
+   },
 
 
   convertMs(ms) {
