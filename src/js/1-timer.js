@@ -61,6 +61,8 @@ const timer = {
       this.elements.minutes.textContent = this.pad(timeComponents.minutes);
       this.elements.seconds.textContent = this.pad(timeComponents.seconds)
       } else {
+          startButton.disabled = false;
+          datetimePicker.disabled = false;
         return;
       };
 
