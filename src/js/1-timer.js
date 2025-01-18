@@ -63,8 +63,8 @@ const timer = {
       } else {
           startButton.disabled = false;
           datetimePicker.disabled = false;
-        return;
       };
+      return;
 
     }, 1000);
 
