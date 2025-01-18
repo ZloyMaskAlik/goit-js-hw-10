@@ -62,7 +62,6 @@ const timer = {
       } else {
         clearInterval(this.intervalId);  
         datetimePicker.disabled = false;
-        return;
       };
     }, 1000);
    },
